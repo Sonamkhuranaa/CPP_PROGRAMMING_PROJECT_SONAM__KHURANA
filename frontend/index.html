@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="COLORCODE — Custom C++ MyString OOP Architecture & Memory Visualizer. A high-performance string class featuring dynamic heap management, deep copy safety, and interactive operator workbench.">
+    <meta name="description"
+        content="COLORCODE — Custom C++ MyString OOP Architecture & Memory Visualizer. A high-performance string class featuring dynamic heap management, deep copy safety, and interactive operator workbench.">
     <title>COLORCODE | C++ OOP String Engine &amp; Memory Visualizer</title>
-    
+
     <!-- Google Fonts: Plus Jakarta Sans, Outfit, Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23796fe0'/><path d='M50 20 C35 20 25 35 25 50 C25 65 50 85 50 85 C50 85 75 65 75 50 C75 35 65 20 50 20 Z' fill='white'/></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23796fe0'/><path d='M50 20 C35 20 25 35 25 50 C25 65 50 85 50 85 C50 85 75 65 75 50 C75 35 65 20 50 20 Z' fill='white'/></svg>">
 </head>
+
 <body>
 
     <!-- ═══════════════════ TOP NAVIGATION ═══════════════════ -->
@@ -22,7 +28,8 @@
             <!-- Brand Logo -->
             <a href="#hero" class="brand-logo" aria-label="ColorCode Home">
                 <svg class="brand-icon" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 2C8.268 2 2 8.716 2 17C2 25.5 16 34 16 34C16 34 30 25.5 30 17C30 8.716 23.732 2 16 2Z" fill="#FFFFFF"/>
+                    <path d="M16 2C8.268 2 2 8.716 2 17C2 25.5 16 34 16 34C16 34 30 25.5 30 17C30 8.716 23.732 2 16 2Z"
+                        fill="#FFFFFF" />
                 </svg>
                 <div class="brand-text-group">
                     <span class="brand-name">COLORCODE</span>
@@ -61,12 +68,13 @@
                     <span class="pulse-dot" id="backendPulse"></span>
                     <span id="backendStatusText">Checking C++ Engine...</span>
                 </div>
-                
+
                 <button class="nav-link-btn" id="runTestSuiteBtn" title="Run full test matrix">
                     Run Tests
                 </button>
-                
-                <button class="pill-btn pill-btn-primary" id="runNativeBtn" title="Execute compiled MyString.exe binary">
+
+                <button class="pill-btn pill-btn-primary" id="runNativeBtn"
+                    title="Execute compiled MyString.exe binary">
                     Try for free
                 </button>
             </div>
@@ -82,11 +90,13 @@
                     The new<br>
                     <span class="hero-title-highlight">Color Theme</span>
                 </h1>
-                
+
                 <div class="hero-category">NEW COLOR PALETTE</div>
-                
+
                 <p class="hero-description">
-                    A new Pantone color whose courageous presence encourages personal inventiveness and creativity. Explore our custom C++ Object-Oriented string engine featuring dynamic heap management, deep copy safety, and zero standard library dependency.
+                    A new Pantone color whose courageous presence encourages personal inventiveness and creativity.
+                    Explore our custom C++ Object-Oriented string engine featuring dynamic heap management, deep copy
+                    safety, and zero standard library dependency.
                 </p>
 
                 <div class="hero-actions">
@@ -101,10 +111,12 @@
                 <div class="hero-visual-wrapper">
                     <!-- Dot pattern overlay matching picture -->
                     <div class="dot-matrix-pattern"></div>
-                    
+
                     <!-- 3D Geometric Artwork from reference picture -->
                     <div class="artwork-container">
-                        <img src="assets/hero-3d.png" alt="3D Geometric Composition - Floating cubes, ribbed spheres and torus in Pantone deep violet" class="hero-3d-img" id="hero3dImg">
+                        <img src="assets/hero-3d.png"
+                            alt="3D Geometric Composition - Floating cubes, ribbed spheres and torus in Pantone deep violet"
+                            class="hero-3d-img" id="hero3dImg">
                     </div>
                 </div>
             </div>
@@ -116,20 +128,22 @@
         <div class="section-heading-wrap">
             <span class="section-badge">INTERACTIVE STUDIO</span>
             <h2 class="section-title">C++ MyString Developer Workbench</h2>
-            <p class="section-subtitle">Real-time dynamic memory allocation, deep copying, and operator overloading inspection.</p>
+            <p class="section-subtitle">Real-time dynamic memory allocation, deep copying, and operator overloading
+                inspection.</p>
         </div>
 
         <div class="studio-grid">
-            
+
             <!-- Left Column: Controls & Operators -->
             <div class="col-workbench">
-                
+
                 <!-- String Instances Card -->
                 <div class="glass-card">
                     <div class="card-top">
                         <div class="card-title-group">
-                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 7V4h16v3M9 20h6M12 4v16"/>
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 7V4h16v3M9 20h6M12 4v16" />
                             </svg>
                             <h3 class="card-heading">String Instances</h3>
                         </div>
@@ -142,7 +156,8 @@
                                 <span class="instance-tag">MyString s1</span>
                                 <span class="char-badge" id="s1LenBadge">len: 5</span>
                             </div>
-                            <input type="text" id="s1Input" class="custom-input" value="Hello" placeholder="Enter string s1..." maxlength="50" autocomplete="off" spellcheck="false">
+                            <input type="text" id="s1Input" class="custom-input" value="Hello"
+                                placeholder="Enter string s1..." maxlength="50" autocomplete="off" spellcheck="false">
                         </div>
 
                         <div class="input-card">
@@ -150,7 +165,8 @@
                                 <span class="instance-tag">MyString s2</span>
                                 <span class="char-badge" id="s2LenBadge">len: 5</span>
                             </div>
-                            <input type="text" id="s2Input" class="custom-input" value="World" placeholder="Enter string s2..." maxlength="50" autocomplete="off" spellcheck="false">
+                            <input type="text" id="s2Input" class="custom-input" value="World"
+                                placeholder="Enter string s2..." maxlength="50" autocomplete="off" spellcheck="false">
                         </div>
                     </div>
 
@@ -198,7 +214,8 @@
                             </div>
                             <div class="mutation-field-group">
                                 <label for="mutationChar">Char</label>
-                                <input type="text" id="mutationChar" class="mini-input mini-input-char" value="X" maxlength="1">
+                                <input type="text" id="mutationChar" class="mini-input mini-input-char" value="X"
+                                    maxlength="1">
                             </div>
                             <button class="pill-btn pill-btn-primary" id="btnMutate">
                                 Mutate
@@ -208,7 +225,8 @@
 
                     <!-- Result Banner -->
                     <div class="status-banner" id="resultBanner">
-                        <div class="banner-body" id="resultText">Select an operator above or type new string values.</div>
+                        <div class="banner-body" id="resultText">Select an operator above or type new string values.
+                        </div>
                         <span class="banner-pill banner-pill-info" id="resultBadge">READY</span>
                     </div>
                 </div>
@@ -217,8 +235,9 @@
                 <div class="glass-card">
                     <div class="card-top">
                         <div class="card-title-group">
-                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                             </svg>
                             <h3 class="card-heading">Deep Copy Memory Isolation</h3>
                         </div>
@@ -227,7 +246,10 @@
 
                     <div class="deep-copy-explanation">
                         <p class="deep-copy-text">
-                            Invoking <code>MyString copy(s1);</code> allocates a separate, independent heap array via <code>new char[length + 1]</code> and deep copies every character byte. Mutating <code>s1[0]</code> modifies <strong>only</strong> the original instance — guaranteeing complete pointer isolation and preventing double-free crashes.
+                            Invoking <code>MyString copy(s1);</code> allocates a separate, independent heap array via
+                            <code>new char[length + 1]</code> and deep copies every character byte. Mutating
+                            <code>s1[0]</code> modifies <strong>only</strong> the original instance — guaranteeing
+                            complete pointer isolation and preventing double-free crashes.
                         </p>
                     </div>
 
@@ -243,9 +265,10 @@
                 <div class="glass-card" id="tests-section">
                     <div class="card-top">
                         <div class="card-title-group">
-                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 11l3 3L22 4"/>
-                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 11l3 3L22 4" />
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
                             </svg>
                             <h3 class="card-heading">Automated Verification Matrix</h3>
                         </div>
@@ -258,16 +281,17 @@
 
             <!-- Right Column: Memory Visualizer & Console -->
             <div class="col-visualizer">
-                
+
                 <!-- Stack & Heap Memory Inspector -->
                 <div class="glass-card" id="memory-section">
                     <div class="card-top">
                         <div class="card-title-group">
-                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
-                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
-                                <line x1="6" y1="6" x2="6.01" y2="6"/>
-                                <line x1="6" y1="18" x2="6.01" y2="18"/>
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                <line x1="6" y1="6" x2="6.01" y2="6" />
+                                <line x1="6" y1="18" x2="6.01" y2="18" />
                             </svg>
                             <h3 class="card-heading">Stack &amp; Heap Memory Layout</h3>
                         </div>
@@ -281,9 +305,10 @@
                 <div class="glass-card" id="code-section">
                     <div class="card-top">
                         <div class="card-title-group">
-                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="16 18 22 12 16 6"/>
-                                <polyline points="8 6 2 12 8 18"/>
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
                             </svg>
                             <h3 class="card-heading">Equivalent C++ Code</h3>
                         </div>
@@ -306,8 +331,10 @@
                         <button class="terminal-clear-btn" id="btnClearTerminal">Clear</button>
                     </div>
                     <div class="terminal-screen" id="terminalBody">
-                        <div class="term-line"><span class="term-prompt">$ </span><span class="term-output">./MyString.exe</span></div>
-                        <div class="term-line term-dim">================ MyString Class Demonstration ================</div>
+                        <div class="term-line"><span class="term-prompt">$ </span><span
+                                class="term-output">./MyString.exe</span></div>
+                        <div class="term-line term-dim">================ MyString Class Demonstration ================
+                        </div>
                         <div class="term-line term-highlight">Engine initialized in ColorCode studio mode. Ready.</div>
                     </div>
                 </div>
@@ -323,11 +350,14 @@
             <div class="footer-left">
                 <div class="footer-brand">
                     <svg class="brand-icon-sm" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 2C8.268 2 2 8.716 2 17C2 25.5 16 34 16 34C16 34 30 25.5 30 17C30 8.716 23.732 2 16 2Z" fill="#FFFFFF"/>
+                        <path
+                            d="M16 2C8.268 2 2 8.716 2 17C2 25.5 16 34 16 34C16 34 30 25.5 30 17C30 8.716 23.732 2 16 2Z"
+                            fill="#FFFFFF" />
                     </svg>
                     <span>COLORCODE &bull; C++ String Architecture</span>
                 </div>
-                <p class="footer-copy">Object-Oriented Programming Project with custom dynamic memory allocation and deep copy safety.</p>
+                <p class="footer-copy">Object-Oriented Programming Project with custom dynamic memory allocation and
+                    deep copy safety.</p>
             </div>
             <div class="footer-right">
                 <button class="footer-link-btn" id="footerResetBtn">Reset Studio</button>
@@ -341,4 +371,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
