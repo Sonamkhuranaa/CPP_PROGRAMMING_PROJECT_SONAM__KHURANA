@@ -31,9 +31,9 @@ int main()
         cout << "s1 and s2 are not equal.\n";
 
     if (s1 != s2)
-        cout << "operator!= also works correctly.\n";
+        cout << "operator!= confirms: s1 and s2 are not equal.\n";
     else
-        cout << "operator!= also works correctly.\n";
+        cout << "operator!= confirms: s1 and s2 are equal.\n";
 
     cout << "\n----- Copy Constructor -----\n";
     MyString copy(s1);

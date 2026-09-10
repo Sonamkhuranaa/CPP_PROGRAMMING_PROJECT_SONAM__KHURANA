@@ -3,17 +3,15 @@
 
 #include <iostream>
 
-using namespace std;
-
 class MyString
 {
 private:
     char* str;
     int length;
 
-    int stringLength(const char* s) const;
-    void copyString(char* dest, const char* src) const;
-    int compareString(const char* s1, const char* s2) const;
+    static int stringLength(const char* s);
+    static void copyString(char* dest, const char* src);
+    static int compareString(const char* s1, const char* s2);
 
 public:
     MyString();
@@ -35,8 +33,8 @@ public:
     void clear();
     const char* c_str() const;
 
-    friend ostream& operator<<(ostream& out, const MyString& s);
-    friend istream& operator>>(istream& in, MyString& s);
+    friend std::ostream& operator<<(std::ostream& out, const MyString& s);
+    friend std::istream& operator>>(std::istream& in, MyString& s);
 };
 
 #endif
